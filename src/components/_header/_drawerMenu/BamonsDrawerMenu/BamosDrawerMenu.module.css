@@ -1,0 +1,27 @@
+.navigationContainer {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity var(--transition-quick), transform var(--transition-quick) ;
+}
+
+.navigationContainer.isOpen {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.navigationLists {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}

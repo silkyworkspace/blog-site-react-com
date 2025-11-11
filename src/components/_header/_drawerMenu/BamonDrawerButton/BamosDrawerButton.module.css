@@ -1,0 +1,66 @@
+.drawerBtn {
+    width: 34px;
+    height: 34px;
+}
+
+.drawerBtnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 9999;
+}
+
+.drawerBtnIcon {
+    width: 20px;
+    height: 100%;
+    position: relative;
+    transition: var(--transition-quick);
+}
+
+.drawerBtnIcon.isOpen {
+    rotate: -135deg;
+}
+
+.drawerBtnIcon.isOpen span {
+    background-color: var(--white);
+}
+
+.drawerBtnIcon span {
+    display: block;
+    background-color: var(--black);
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drawerBtnIcon span:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drawerBtnIcon span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.drawerBtnText {
+    color: var(--black);
+    line-height: 1.0;
+    font-size: var(--font-size-xs);
+}
+
+.drawerBtnIcon.isOpen+.drawerBtnText {
+    color: var(--white);
+}

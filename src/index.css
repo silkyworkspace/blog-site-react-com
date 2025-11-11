@@ -1,0 +1,42 @@
+:root {
+    /* カラー */
+    --white: #fff;
+    --black: #000;
+    --gray: #d9d9d9;
+    --accent: #cd3796;
+
+    /* フォントファミリー */
+    --main-font: "Lexend", sans-serif;
+
+    /* フォントサイズ */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 13px;
+    --font-size-lg: 15px;
+    --font-size-xl: 24px;
+
+    /* トランジション */
+    --transition-quick: 0.3s ease-in-out;
+    --transition-normal: 0.5s ease-in-out;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: var(--font-size-sm);
+    line-height: 1.2;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
