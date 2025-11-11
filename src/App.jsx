@@ -1,10 +1,11 @@
 import './App.css'
+import Header from './components/_header/Header'
 
 function App() {
 
   return (
     <>
-    <h1>Reactを利用したブログサイト練習</h1>
+    <Header />
     </>
   )
 }

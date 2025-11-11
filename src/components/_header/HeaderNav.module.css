@@ -1,0 +1,13 @@
+/******* Header.jsx CSS ******/
+.header {
+    height: 52px;
+}
+
+/******* Navigation.jsx CSS ******/
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-inline: 16px;
+}
