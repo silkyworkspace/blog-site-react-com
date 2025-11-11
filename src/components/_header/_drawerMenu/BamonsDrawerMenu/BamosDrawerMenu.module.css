@@ -9,6 +9,7 @@
     opacity: 0;
     transform: translateY(-40px);
     transition: opacity var(--transition-quick), transform var(--transition-quick) ;
+    z-index: 999;
 }
 
 .navigationContainer.isOpen {
