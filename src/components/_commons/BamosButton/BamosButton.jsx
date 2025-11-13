@@ -4,7 +4,7 @@ export default function BamosButton({
     label = "button",
     onClick = () => console.log("このボタンはonClickが設定されていません"),}) {
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button onClick={onClick} className={styles.button} type="button">
         {label}
     </button>
   )
