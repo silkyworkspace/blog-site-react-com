@@ -1,0 +1,4 @@
+.text {
+    display: block;
+    margin-block: var(--font-size-xl);
+}
