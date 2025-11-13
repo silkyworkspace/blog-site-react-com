@@ -2,3 +2,8 @@
     max-width: 994px;
     margin-inline: auto;
 }
+
+/******* MainAreaSection.jsx *******/
+.feedBackSection button {
+    margin-block: 32px 48px;
+}

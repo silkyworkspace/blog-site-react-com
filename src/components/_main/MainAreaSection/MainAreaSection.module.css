@@ -1,0 +1,11 @@
+.section {
+    margin-top: 60px;
+}
+
+.section + .section {
+    margin-top: 52px;
+}
+
+/* .feedBackSection {
+    text-align: center;
+} */
