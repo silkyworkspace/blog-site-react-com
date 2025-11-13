@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BamosDrawerButton from "./_drawerMenu/BamonDrawerButton/BamosDrawerButton";
 import BamosDrawerMenu from "./_drawerMenu/BamonsDrawerMenu/BamosDrawerMenu";
-import BamosLogo from "./BamosLogo";
+import BamosLogo from "../_commons/BamosLogo";
 import styles from './HeaderNav.module.css';
 
 export default function Navigation() {
