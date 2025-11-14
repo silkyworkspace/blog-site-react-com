@@ -7,7 +7,7 @@ import BamosButton from '../../_commons/BamosButton/BamosButton'
 import CloseButton from "../../../assets/images/closeButton.svg"
 import styles from "./FormContainer.module.css"
 
-export default function FormContainer({closeModal}) {
+export default function FormContainer({closeModal, setIsOpen}) {
 
     const [form, setForm] = useState({
         media: "",
@@ -18,6 +18,7 @@ export default function FormContainer({closeModal}) {
 
     const handleSubmit = () => {
         console.log(JSON.stringify(form, null, 2));
+        setIsOpen(false);
     };
 
     return (

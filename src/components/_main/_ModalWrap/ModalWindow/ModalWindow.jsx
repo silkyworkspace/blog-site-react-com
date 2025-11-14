@@ -15,7 +15,7 @@ export default function ModalWindow({setIsOpen}) {
 
             <div className={styles.modalBox} onClick={(e) => e.stopPropagation()}>
                 <h2>FEEDBACK</h2>
-                <FormContainer closeModal={closeModal}/>
+                <FormContainer closeModal={closeModal} setIsOpen={setIsOpen}/>
             </div>
 
         </div>
