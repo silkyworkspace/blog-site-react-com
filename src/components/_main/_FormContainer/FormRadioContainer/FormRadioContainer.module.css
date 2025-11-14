@@ -2,10 +2,11 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 8px;
 
     span.radioItem {
     display: inline-block;
-    width: 80px;
+    width: 86px;
 }
 }
 

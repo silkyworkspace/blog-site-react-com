@@ -1,0 +1,22 @@
+.cardTextArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+
+    .cardText {
+
+        font-size: var(--font-size-lg);
+
+        p {
+            font-size: var(--font-size-md);
+            color: var(--dark-gray);
+        }
+    }
+
+    .buttonArea {
+        display: flex;
+        gap: 16px;
+    }
+
+}

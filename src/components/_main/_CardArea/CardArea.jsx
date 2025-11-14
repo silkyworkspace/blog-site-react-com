@@ -1,9 +1,9 @@
-import BamosCardItems from "./BamosCardItems";
+import BamosCardItems from "./BamosCardItems/BamosCardItems";
 
 export default function CardArea() {
   return (
-    <div>
+    <>
         <BamosCardItems />
-    </div>
+    </>
   )
 }

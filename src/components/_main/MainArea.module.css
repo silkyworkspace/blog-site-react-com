@@ -1,4 +1,18 @@
-.text {
-    display: block;
-    margin-block: var(--font-size-xl);
+.mainWrap {
+    max-width: 994px;
+    margin-inline: auto;
+}
+
+.feedbackP {
+
+    @media (width >=768px) {
+        max-width: 670px;
+        margin-inline: auto;
+    }
+
+    .text {
+        display: block;
+        margin-block: var(--font-size-xl);
+    }
+
 }

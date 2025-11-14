@@ -1,6 +1,10 @@
 /******* Header.jsx CSS ******/
 .header {
     height: 52px;
+
+    @media (width >= 1200px) {
+        height: 68px;
+    }
 }
 
 /******* Navigation.jsx CSS ******/
