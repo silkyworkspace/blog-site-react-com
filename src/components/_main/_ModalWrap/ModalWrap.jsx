@@ -12,7 +12,10 @@ export default function ModalWrap() {
 
   return (
     <div>
-        <BamosButton label="FEEDBACK" onClick={handleClick}/>
+        <BamosButton
+        label="FEEDBACK"
+        onClick={handleClick}/>
+
         {isOpen && (
             <ModalWindow setIsOpen={setIsOpen}/>
         )}

@@ -4,7 +4,8 @@ import FormSelectContainer from './FormSelectContainer/FormSelectContainer'
 import FormCheckMultiContainer from './FormCheckMultiContainer/FormCheckMultiContainer'
 import FormTextareaContainer from './FormTextareaContainer/FormTextareaContainer'
 import BamosButton from '../../_commons/BamosButton/BamosButton'
-// import styles from "./FormContainer.module.css"
+import CloseButton from "../../../assets/images/closeButton.svg"
+import styles from "./FormContainer.module.css"
 
 export default function FormContainer({closeModal}) {
 
@@ -16,12 +17,12 @@ export default function FormContainer({closeModal}) {
     });
 
     const handleSubmit = () => {
-        console.log('入力されたフォームの情報が出力されます');
+        console.log(JSON.stringify(form, null, 2));
     };
 
     return (
         <>
-            <form action="" method='POST'>
+            <form action="" method='POST' className={styles.form}>
 
                 <FormRadioContainer form={form} setForm={setForm} />
                 <FormSelectContainer form={form} setForm={setForm} />
@@ -31,7 +32,9 @@ export default function FormContainer({closeModal}) {
                 <BamosButton label="SUBMIT" onClick={handleSubmit} />
             </form>
             
-            <button type='button' onClick={closeModal}>×</button>
+            <button type='button' className={styles.closeBtn} onClick={closeModal}>
+                <img src={CloseButton} alt="閉じるボタン" />
+            </button>
         </>
     )
 }
