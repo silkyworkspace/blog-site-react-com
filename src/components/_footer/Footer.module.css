@@ -2,4 +2,5 @@
     background-color: var(--black);
     padding: 18px;
     text-align: center;
+    margin-block-start: 48px;
 }

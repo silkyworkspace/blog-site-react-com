@@ -7,3 +7,12 @@
 .feedBackSection button {
     margin-block: 32px 48px;
 }
+
+/******* FormRadioContainer.jsx *******/
+/******* FormSelectContainer.jsx *******/
+/******* FormCheckMultiContainer.jsx *******/
+/******* FormTextareaContainer.jsx *******/
+legend,.legendP {
+    font-weight: 700;
+    margin-block-end: 4px;
+}

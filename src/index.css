@@ -42,4 +42,21 @@ img {
     vertical-align: bottom;
 }
 
+fieldset {
+    border: none;
+}
 
+select,
+textarea {
+    border: 1px solid var(--black);
+}
+
+textarea {
+    width: 100%;
+    height: 4rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-inline-end: 2px;
+}
