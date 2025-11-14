@@ -13,10 +13,14 @@
     z-index: 99;
 
     .modalContent {
-        max-width: 468px;
+        min-width: 340px;
         border-radius: 4px;
         background-color: #fff;
         position: relative;
+
+        @media (width >= 768px) {
+            width: 468px;
+        }
 
         .modalBox {
             display: flex;

@@ -3,6 +3,7 @@ import ThumbsDown from "@/assets/images/thumbsDown.svg"
 import isActiveThumbsUp from "@/assets/images/isActive_thumbsUp.svg"
 import isActiveThumbsDown from "@/assets/images/isActive_thumbsDown.svg"
 import { useState } from "react"
+import styles from "./ThumbsUpDownButton.module.css"
 
 export default function ThumbsUpDownButton({ init = 0, GorB = true }) {
     const [isActive, setIsActive] = useState(false);
@@ -22,7 +23,7 @@ export default function ThumbsUpDownButton({ init = 0, GorB = true }) {
     }
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className={styles.buttonBox}>
             <div>
                 <img src={icon} alt={GorB ? "ThumbsUp" : "ThumbsDown"} />
             </div>

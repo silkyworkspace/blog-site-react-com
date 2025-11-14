@@ -1,21 +1,21 @@
 const navLists = [
     {
         id: 1,
-        listName: "MENU01",
+        listName: "MENU-01",
     },
     {
         id: 2,
-        listName: "MENU01",
+        listName: "MENU-02",
     },
 
     {
         id: 3,
-        listName: "MENU01",
+        listName: "MENU-03",
     },
 
     {
         id: 4,
-        listName: "MENU01",
+        listName: "MENU-04",
     },
 ];
 

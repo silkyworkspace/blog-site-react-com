@@ -1,11 +1,12 @@
-import BamosCard from "./BamosCard";
-import bamosList from "./bamosList";
+import BamosCard from "../BamosCard/BamosCard";
+import bamosList from "../bamosList";
+import styles from "./BamosCardItems.module.css"
 
 export default function BamosCardItems() {
     return (
-        <div>
+        <ul className={styles.cardItems}>
             {bamosList.map((item, index) => (
-                <ul key={index}>
+                <li key={index}>
                     <BamosCard
                         author={item.author}
                         title={item.title}
@@ -14,8 +15,8 @@ export default function BamosCardItems() {
                         thumbsUp={item.thumbsUp}
                         thumbsDown={item.thumbsDown}
                     />
-                </ul>
+                </li>
             ))}
-        </div>
+        </ul>
     )
 }

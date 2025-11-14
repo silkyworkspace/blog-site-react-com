@@ -3,6 +3,7 @@
     --white: #fff;
     --black: #333;
     --gray: #d9d9d9;
+    --dark-gray: #808080;
     --accent: #cd3796;
 
     /* フォントファミリー */
@@ -25,6 +26,10 @@ body {
     font-size: var(--font-size-sm);
     line-height: 1.2;
     color: var(--black);
+
+    @media (width >=768px) {
+        font-size: var(--font-size-lg);
+    }
 }
 
 li {
@@ -42,6 +47,10 @@ img {
     vertical-align: bottom;
 }
 
+span {
+    color: var(--black);
+}
+
 fieldset {
     border: none;
 }
@@ -49,6 +58,10 @@ fieldset {
 select,
 textarea {
     border: 1px solid var(--black);
+}
+
+select {
+    padding: 2px 16px
 }
 
 textarea {
