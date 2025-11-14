@@ -58,6 +58,7 @@ fieldset {
 select,
 textarea {
     border: 1px solid var(--black);
+    color: var(--black);
 }
 
 select {
